@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" hidden="true" mandatory="true" name="rockerswitch">
+			<property data-type="class java.lang.string" key="virtual_root" value="VIRTUAL_ROOT"/>
+			<feature mandatory="true" name="Rocker1_1">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Rocker 1_1"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<feature name="Changeover1">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Changeover 1"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<feature mandatory="true" name="Off1_1">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Off 1_1"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<and abstract="true" mandatory="true" name="O_Ring">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="O_Ring"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature mandatory="true" name="O_Ring1_2">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="O_Ring"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="O_Ring 1_2"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="O_Ring1_1">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="O_Ring"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="O_Ring 1_1"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</and>
+			<feature name="Neutral1_1">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Neutral 1_1"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<and abstract="true" mandatory="true" name="Screw">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Screw"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature mandatory="true" name="Screw1_2">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Screw"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Screw 1_2"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="Screw1_1">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Screw"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Screw 1_1"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</and>
+			<feature mandatory="true" name="Pole1_1">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Pole 1_1"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<feature mandatory="true" name="Socket">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Socket"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<and abstract="true" mandatory="true" name="Claw">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Claw"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature mandatory="true" name="Claw1_1">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Claw"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Claw 1_1"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="Claw1_2">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Claw"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Claw 1_2"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</and>
+			<feature name="Led1"/>
+		</and>
+	</struct>
+</featureModel>

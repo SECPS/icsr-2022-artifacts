@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+	<properties>
+		<graphics key="legendautolayout" value="true"/>
+		<graphics key="showshortnames" value="false"/>
+		<graphics key="layout" value="horizontal"/>
+		<graphics key="showcollapsedconstraints" value="true"/>
+		<graphics key="legendhidden" value="false"/>
+		<graphics key="layoutalgorithm" value="1"/>
+	</properties>
+	<struct>
+		<and abstract="true" hidden="true" mandatory="true" name="waterfilter.dsl">
+			<property data-type="class java.lang.string" key="virtual_root" value="VIRTUAL_ROOT"/>
+			<and abstract="true" mandatory="true" name="Tube">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Tube"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature mandatory="true" name="Tube2">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Tube"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Tube2"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature name="Tube3">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Tube"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Tube3"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="Tube1">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Tube"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Tube1"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</and>
+			<feature mandatory="true" name="Sand">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="Sand"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<alt abstract="true" mandatory="true" name="Mount">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Mount"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature name="IronFrame">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Mount"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="IronFrame"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature name="Rack2">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Mount"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Rack2"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature name="Rack1">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Mount"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Rack1"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</alt>
+			<alt abstract="true" mandatory="true" name="Filtertank">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Filtertank"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature name="FiltertankXL">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Filtertank"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="FiltertankXL"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature name="FiltertankS">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Filtertank"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="FiltertankS"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</alt>
+			<and abstract="true" mandatory="true" name="Valve">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Valve"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature name="Valve2">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Valve"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Valve2"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="Valve1">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Valve"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="Valve1"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</and>
+			<and name="Nanofilter">
+				<property data-type="int" key="children_products_list_size" value="3"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="children_products_list_nr_0" value="NanofilterHull"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Nanofilter"/>
+				<property data-type="string" key="children_products_list_nr_1" value="NanofilterMaterial"/>
+				<property data-type="string" key="children_products_list_nr_2" value="Membrane"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature mandatory="true" name="NanofilterHull">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_name" value="NanofilterHull"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="NanofilterMaterial">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_name" value="NanofilterMaterial"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature mandatory="true" name="Membrane">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_name" value="Membrane"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</and>
+			<feature name="WastewaterTankXL">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_name" value="WastewaterTankXL"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+			</feature>
+			<feature name="WaterflowSensor"/>
+			<alt abstract="true" mandatory="true" name="FreshwaterTank">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="FreshwaterTank"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature name="FreshwaterTankXL">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="FreshwaterTank"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="FreshwaterTankXL"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature name="FreshwaterTankS">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="FreshwaterTank"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="FreshwaterTankS"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</alt>
+			<alt abstract="true" mandatory="true" name="Charcoal">
+				<property data-type="int" key="children_products_list_size" value="0"/>
+				<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+				<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+				<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+				<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+				<property data-type="int" key="implemented_products_list_size" value="0"/>
+				<graphics key="collapsed" value="false"/>
+				<property data-type="string" key="attribute_name" value="Charcoal"/>
+				<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				<feature name="CharcoalBone">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Charcoal"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="CharcoalBone"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+				<feature name="CharcoalActive">
+					<property data-type="int" key="children_products_list_size" value="0"/>
+					<property data-type="string" key="attribute_description_partialproduct" value="Specifies if the given product is a partial one"/>
+					<property data-type="string" key="attribute_default_value_partialproduct" value="false"/>
+					<property data-type="string" key="implemented_products_list_nr_0" value="Charcoal"/>
+					<property data-type="string" key="attribute_id_partialproduct" value="partialProduct"/>
+					<property data-type="string" key="attribute_type_partialproduct" value="String"/>
+					<property data-type="int" key="implemented_products_list_size" value="1"/>
+					<property data-type="string" key="attribute_name" value="CharcoalActive"/>
+					<property data-type="string" key="attribute_value_partialproduct" value="true"/>
+				</feature>
+			</alt>
+		</and>
+	</struct>
+	<constraints>
+		<rule>
+			<imp>
+				<var>FreshwaterTankXL</var>
+				<var>FiltertankXL</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FreshwaterTankXL</var>
+				<var>WastewaterTankXL</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankXL</var>
+				<var>WastewaterTankXL</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankXL</var>
+				<var>FreshwaterTankXL</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankXL</var>
+				<var>Rack2</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankXL</var>
+				<var>Tube3</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankXL</var>
+				<var>Valve2</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FreshwaterTankS</var>
+				<var>FiltertankS</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>Nanofilter</var>
+				<not>
+					<var>IronFrame</var>
+				</not>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>WastewaterTankXL</var>
+				<var>FiltertankXL</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>WastewaterTankXL</var>
+				<var>FreshwaterTankXL</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankS</var>
+				<var>FreshwaterTankS</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankS</var>
+				<not>
+					<var>WastewaterTankXL</var>
+				</not>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankS</var>
+				<not>
+					<var>Rack2</var>
+				</not>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankS</var>
+				<not>
+					<var>Valve2</var>
+				</not>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<var>FiltertankS</var>
+				<not>
+					<var>Tube3</var>
+				</not>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<conj>
+					<var>FiltertankS</var>
+					<var>Nanofilter</var>
+				</conj>
+				<var>Rack1</var>
+			</imp>
+		</rule>
+		<rule>
+			<imp>
+				<conj>
+					<var>Rack1</var>
+					<var>FiltertankS</var>
+				</conj>
+				<var>Nanofilter</var>
+			</imp>
+		</rule>
+	</constraints>
+</featureModel>

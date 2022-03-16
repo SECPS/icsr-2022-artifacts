@@ -1,0 +1,357 @@
+Attribute "component": {
+    description: "Specifies if the given product is a partial one",
+    defaultValue: "false",
+    type: "String"
+}
+
+Product "WaterflowSensor": {
+	name: "WaterflowSensor",
+	component: "true"
+}
+
+Product "Charcoal": {
+	name: "Charcoal",
+	isAbstract: true,
+	component: "true"
+}
+
+Product "CharcoalActive": {
+	name: "CharcoalActive",
+	isAbstract: false,
+	implements: [ "Charcoal" ],
+	excludes: [ "CharcoalBone" ],
+	component: "true"
+}
+
+Product "CharcoalBone": {
+	name: "CharcoalBone",
+	isAbstract: false,
+	implements: [ "Charcoal" ],
+	excludes: [ "CharcoalActive" ],
+	component: "true"
+}
+
+Product "Sand": {
+	name: "Sand",
+	isAbstract: false,
+	component: "true"
+}
+
+Product "Valve": {
+	name: "Valve",
+	isAbstract: true,
+	component: "true"
+}
+
+Product "Valve1": {
+	name: "Valve1",
+	isAbstract: false,
+	implements: [ "Valve" ],
+	component: "true"
+}
+
+Product "Valve2": {
+	name: "Valve2",
+	isAbstract: false,
+	implements: [ "Valve" ],
+	component: "true"
+}
+
+Product "Tube": {
+	name: "Tube",
+	isAbstract: true,
+	component: "true"
+}
+
+Product "Tube1": {
+	name: "Tube1",
+	isAbstract: false,
+	implements: [ "Tube" ],
+	component: "true"
+}
+
+Product "Tube2": {
+	name: "Tube2",
+	isAbstract: false,
+	implements: [ "Tube" ],
+	component: "true"
+}
+
+Product "Tube3": {
+	name: "Tube3",
+	isAbstract: false,
+	implements: [ "Tube" ],
+	component: "true"
+}
+
+Product "Mount": {
+	name: "Mount",
+	isAbstract: true,
+	component: "true"
+}
+
+Product "Rack1": {
+	name: "Rack1",
+	isAbstract: false,
+	implements: [ "Mount" ],
+	excludes: [ "Rack2", "IronFrame" ],
+	component: "true"
+}
+
+Product "Rack2": {
+	name: "Rack2",
+	isAbstract: false,
+	implements: [ "Mount" ],
+	excludes: [ "Rack1", "IronFrame" ],
+	component: "true"
+}
+
+Product "IronFrame": {
+	name: "IronFrame",
+	isAbstract: false,
+	implements: [ "Mount" ],
+	excludes: [ "Rack2", "Rack1" ],
+	component: "true"
+}
+
+Product "FreshwaterTank": {
+	name: "FreshwaterTank",
+	isAbstract: true,
+	component: "true"
+}
+
+Product "FreshwaterTankS": {
+	name: "FreshwaterTankS",
+	isAbstract: false,
+	implements: [ "FreshwaterTank" ],
+	requires: [ "FiltertankS", "WastewaterTankS" ],
+	excludes: [ "FreshwaterTankXL", "WastewaterTankXL" ],
+	component: "true"
+}
+
+Product "FreshwaterTankXL": {
+	name: "FreshwaterTankXL",
+	isAbstract: false,
+	implements: [ "FreshwaterTank" ],
+	requires: [ "FiltertankXL", "WastewaterTankXL" ],
+	excludes: [ "FreshwaterTankS", "WastewaterTankS" ],
+	component: "true"
+}
+
+Product "Filtertank": {
+	name: "Filtertank",
+	isAbstract: true,
+	requires: [ "Sand" ],
+	component: "true"
+}
+
+Product "FiltertankS": {
+	name: "FiltertankS",
+	isAbstract: false,
+	implements: [ "Filtertank" ],
+	requires: [ "FreshwaterTankS", "WastewaterTankS" ],
+	excludes: [ "FiltertankXL", "Rack2", "Valve2", "Tube3" ],
+	component: "true"
+}
+
+Product "FiltertankXL": {
+	name: "FiltertankXL",
+	isAbstract: false,
+	implements: [ "Filtertank" ],
+	requires: [ "WastewaterTankXL", "FreshwaterTankXL", "Rack2", "Tube3", "Valve2" ],
+	excludes: [ "FiltertankS", "WastewaterTankS" ],
+	component: "true"
+}
+
+Product "WastewaterTank": {
+	name: "WastewaterTank",
+	isAbstract: true,
+	component: "true"
+}
+
+Product "WastewaterTankXL": {
+	name: "WastewaterTankXL",
+	isAbstract: false,
+	implements: [ "WastewaterTank" ],
+	requires: [ "FiltertankXL", "FreshwaterTankXL" ],
+	excludes: [ "WastewaterTankS" ],
+	component: "true"
+}
+
+Product "WastewaterTankS": {
+	name: "WastewaterTankS",
+	isAbstract: false,
+	implements: [ "WastewaterTank" ],
+	requires: [ "FiltertankS", "FreshwaterTankS"],
+	excludes: [ "WastewaterTankXL" ],
+	component: "true"
+}
+
+Product "Nanofilter": {
+	name: "Nanofilter",
+	isAbstract: false,
+	children: [ "NanofilterHull", "NanofilterMaterial", "Membrane"],
+	requires: [ "NanofilterHull", "NanofilterMaterial", "Membrane"],
+	excludes: [ "IronFrame" ],
+	component: "true"
+}
+
+Product "NanofilterHull": {
+	name: "NanofilterHull",
+	isAbstract: false,
+	component: "true"
+}
+
+Product "NanofilterMaterial": {
+	name: "NanofilterMaterial",
+	isAbstract: false,
+	component: "true"
+}
+
+Product "Membrane": {
+	name: "Membrane",
+	isAbstract: false,
+	component: "true"
+}
+
+Product "CompletedTank": {
+	name: "CompletedTank",
+	isAbstract: true,
+	requires: [ "Mount", "FreshwaterTank", "Filtertank", "Valve", "Valve1" , "Tube", "Tube1", "Tube2", "Charcoal", "WastewaterTank" ],
+}
+
+Product "CompletedTank-1": {
+	name: "CompletedTank-1",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "IronFrame", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalBone" ],
+	excludes: [ "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-2": {
+	name: "CompletedTank-2",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "IronFrame", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalActive"  ],
+	excludes: [ "CompletedTank-1", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-3": {
+	name: "CompletedTank-3",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack1", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalBone", "Nanofilter" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-4": {
+	name: "CompletedTank-4",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack1", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalActive", "Nanofilter" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-5": {
+	name: "CompletedTank-5",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [  "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalBone", "Tube3" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-6": {
+	name: "CompletedTank-6",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalActive", "Tube3" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-7": {
+	name: "CompletedTank-7",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [  "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalBone", "Tube3", "Nanofilter" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-8": {
+	name: "CompletedTank-8",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalActive", "Tube3", "Nanofilter" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-9": {
+	name: "CompletedTank-9",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "IronFrame", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalBone", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-10": {
+	name: "CompletedTank-10",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "IronFrame", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalActive", "WaterflowSensor"  ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-11": {
+	name: "CompletedTank-11",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack1", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalBone", "Nanofilter", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-12": {
+	name: "CompletedTank-12",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack1", "FreshwaterTankS", "FiltertankS", "WastewaterTankS", "CharcoalActive", "Nanofilter", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-13": {
+	name: "CompletedTank-5",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [  "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalBone", "Tube3", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-14", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-14": {
+	name: "CompletedTank-14",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalActive", "Tube3", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-15", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-15": {
+	name: "CompletedTank-15",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [  "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalBone", "Tube3", "Nanofilter", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-16" ]
+}
+
+Product "CompletedTank-16": {
+	name: "CompletedTank-16",
+	isAbstract: false,
+	implements: [ "CompletedTank" ],
+	requires: [ "Rack2", "FreshwaterTankXL", "WastewaterTankXL", "Valve2", "FiltertankXL", "CharcoalActive", "Tube3", "Nanofilter", "WaterflowSensor" ],
+	excludes: [ "CompletedTank-1", "CompletedTank-2", "CompletedTank-3", "CompletedTank-4", "CompletedTank-5", "CompletedTank-6", "CompletedTank-7", "CompletedTank-8", "CompletedTank-9", "CompletedTank-10", "CompletedTank-11", "CompletedTank-12", "CompletedTank-13", "CompletedTank-14", "CompletedTank-15" ]
+}
+
+Constraint "Constraint1": {
+	definition: "FiltertankS, Nanofilter, Rack1 -> FiltertankS and Nanofilter implies Rack1"
+}
+
+Constraint "Constraint2": {
+	definition: "Rack1, FiltertankS, Nanofilter -> Rack1 and FiltertankS implies Nanofilter"
+}
